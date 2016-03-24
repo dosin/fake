@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* reset */
+
+html {
+	font-size: 62.5%;
+	font-family: arial;
+	width: 100%;
+	height: 100%;
+}
+html, body, div{
+	margin: 0;
+	padding: 0;
+}
+header, main, footer {
+	display: block;
+	font-size: 1.2rem;
+}
+a {
+	font-family: arial;
+}
+
+/* 头部 */
+
+header {
+	overflow: hidden;
+}
+header ul {
+	list-style: none;
+	float: right;
+	margin-right: 10px;
+}
+header li {
+	float: left;
+	padding: 10px 10px;
+}
+header li:not(:nth-last-of-type(-n+3)) {
+	font-weight: bold;
+}
+header a {
+	color: #000;
+	letter-spacing: 0.08rem;
+}
+header li:last-of-type a {
+	text-decoration: none;
+	padding: 4px;
+	color: #fff;
+	background: #4791ff;
+}
+input:hover, input:focus {
+	outline: none;
+}
+
+/* 主体 */
+
+main {
+	text-align: center;
+}
+.logo, .search {
+	overflow: hidden;
+}
+.logo img{
+	width: 270px;
+	height: 129px;
+	margin: 50px 0 20px 0;
+}
+.search {
+	width: 644px;
+	margin: 0 auto;
+}
+.searchbar {
+	width: 540px;
+	height: 32px;
+	border: 1px solid #ccc;
+	border-right-color: transparent;
+	float: left;
+	text-indent: 0.5rem;
+	font-size: 1.6rem;
+}
+.searchbar:hover {
+	border-color: #999 transparent #b3b3b3 #999;
+}
+.searchbar:focus {
+	border-color: #4791ff transparent #4791ff #4791ff;
+}
+.searchbtn {
+	color: #fff;
+	background: #4791ff;
+	width: 100px;
+	height: 36px;
+	border: 1px solid #4791ff;
+	font-size: 1.5rem;
+	float: left;
+	cursor: pointer;
+}
+
+/* 页脚 */
+
+footer {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	transform: translate(-50%);
+	width: 640px;
+	height: 60px;
+	color: #999;
+}
+
+.qrcode, .app {
+	float: left;
+}
+.footer, .appinfo {
+	float: right;
+}
+
+.app {
+	margin-right: 20px;
+}
+.appinfo {
+	padding: 10px;
+}
+.appinfo strong {
+	display: block;
+	padding-bottom: 5px;
+	color: #4c4c4c;
+}
+.appinfo span {
+	padding-top: 5px;
+}
+
+.footer {
+	padding-top: 10px;
+}
+.footer a {
+	color: #272727;
+}
+.footer nav a {
+	padding-right: 20px;
+}
+.footer p a {
+	color: #666;
+}
